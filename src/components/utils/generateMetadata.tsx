@@ -40,11 +40,6 @@ export const generateMetadata = ({
     alternates: {
       canonical: fullPath // Adding canonical URL
     },
-    link: [
-      {
-        rel: 'icon',
-        href: '/favicon.ico' // Icon link
-      }
-    ]
+    link: []
   };
 };

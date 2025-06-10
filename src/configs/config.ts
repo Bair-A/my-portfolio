@@ -47,13 +47,13 @@ export const siteConfig: {
 } = {
   baseUrl: 'https://muhammadfiaz.com',
   domain: 'muhammadfiaz.com',
-  author: 'Muhammad Fiaz',
-  author_surname: 'Fiaz',
-  titlePrefix: 'Muhammad Fiaz',
-  github_org_name: 'Fiaz Technologies',
-  country: 'India',
+  author: 'Bair Aveev',
+  author_surname: 'Aveev',
+  titlePrefix: 'Bair Aveev',
+  github_org_name: '',
+  country: 'Russia',
   profile_image:
-    'https://avatars.githubusercontent.com/u/75434191?s=400&u=0aa88e4ae941c44425b2be4595cf92b68f578f8a&v=4',
+    'https://avatars.githubusercontent.com/u/60327040?s=400&u=70da1ce184957b372fedfe57b4550a6651a0b906&v=4',
   form_id: 'https://formspree.io/f/myzynpbr',
   social: {
     kofi: 'https://ko-fi.com/muhammadfiaz',

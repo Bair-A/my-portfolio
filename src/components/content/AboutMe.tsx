@@ -21,8 +21,8 @@ const AboutMe = () => {
         , and I've been passionate about coding since I was a child. I fell in
         love with programming at a young age, spending countless hours learning,
         experimenting, and creating small projects. Over the years, this passion
-        has grown into a career as a Full Stack developer, where I continue to
-        build innovative solutions that solve real-world problems.
+        has grown into a career as a Frontend, where I continue to build
+        innovative solutions that solve real-world problems.
       </p>
 
       <p className="text-sm sm:text-base md:text-lg text-foreground dark:text-white mt-4">

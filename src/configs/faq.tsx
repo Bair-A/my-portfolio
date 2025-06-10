@@ -15,7 +15,7 @@ export const faqData: FAQItem[] = [
     title: 'Who are you?',
     content: (
       <>
-        Hey there! 👋 I'm Muhammad Fiaz, a Full Stack developer passionate about
+        Hey there! 👋 I'm Aveev Bair, a Frontend developer passionate about
         coding since childhood. I build innovative solutions using a variety of
         technologies like Next.js, Node.js, Python, TypeScript, Go, Rust,
         Flutter, and GenAI. I'm also diving into MLOps and always eager to learn

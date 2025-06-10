@@ -24,7 +24,7 @@ const Hero = () => {
 
         <h2 className="flex items-center gap-2 text-lg lg:text-xl text-gray-700 dark:text-gray-400 mb-8 mx-auto lg:mx-0">
           <span className="relative w-[max-content] font-mono typing-animation text-gray-800 dark:text-gray-200">
-            I'm a Full Stack Developer
+            I'm a Frontend Developer
           </span>
         </h2>
 

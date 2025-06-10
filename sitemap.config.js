@@ -1,7 +1,7 @@
 /** @type {import('next-sitemap').IConfig} */
 
 module.exports = {
-  siteUrl: process.env.SITE_URL || 'https://muhammadfiaz.com',
+  siteUrl: process.env.SITE_URL || '',
   generateRobotsTxt: false, // due to already generate by nextjs
   generateIndexSitemap: true, // (optional)
   additionalSitemaps: [
