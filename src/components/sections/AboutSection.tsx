@@ -6,8 +6,6 @@ import TitleSectionPageContainer from '../utils/TitleSectionPageContainer';
 import SectionContainer from '../utils/SectionContainer';
 import Link from 'next/link';
 import ContactMe from '@/src/components/content/ContactMe';
-import SupportMe from '@/src/components/content/SupportMe';
-import FAQSection from '@/src/components/sections/FAQSection';
 import SkillsSection from '@/src/components/sections/SkillsSection';
 
 const AboutSection = () => {
@@ -75,15 +73,6 @@ const AboutSection = () => {
         {/* Contact Section */}
         <AnimationContainer customClassName="w-full mt-16">
           <ContactMe />
-        </AnimationContainer>
-        {/* Support Me Section */}
-        <AnimationContainer customClassName="w-full mt-16">
-          <SupportMe />
-        </AnimationContainer>
-
-        {/* FAQ Section */}
-        <AnimationContainer customClassName="w-full mt-16">
-          <FAQSection />
         </AnimationContainer>
       </div>
     </SectionContainer>

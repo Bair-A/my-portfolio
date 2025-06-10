@@ -18,33 +18,13 @@ const AboutMe = () => {
         <strong className="text-foreground dark:text-white">
           {siteConfig.author}
         </strong>
-        , and I've been passionate about coding since I was a child. I fell in
-        love with programming at a young age, spending countless hours learning,
-        experimenting, and creating small projects. Over the years, this passion
-        has grown into a career as a Frontend, where I continue to build
-        innovative solutions that solve real-world problems.
-      </p>
-
-      <p className="text-sm sm:text-base md:text-lg text-foreground dark:text-white mt-4">
-        As I’ve evolved in my career, I’ve expanded my expertise into new areas
-        like Machine Learning (ML) and Artificial Intelligence (AI), diving deep
-        into neural networks and other cutting-edge technologies. But no matter
-        how much I learn, I always keep that same excitement and curiosity I had
-        as a child, exploring new fields and technologies that push the
-        boundaries of what’s possible.
-      </p>
-
-      <p className="text-sm sm:text-base md:text-lg text-foreground dark:text-white mt-4">
-        Today, I’m not just focused on building apps and websites; I’m also
-        exploring DevOps tools like Docker, Kubernetes, and AWS to optimize and
-        scale my projects. I believe in continuous learning and growth, and I’m
-        always looking for new challenges that help me expand my skills.
-      </p>
-
-      <p className="text-sm sm:text-base md:text-lg text-foreground dark:text-white mt-4">
-        If you’re interested in collaborating on something exciting or need help
-        with a project, feel free to reach out. Let’s create something amazing
-        together!
+        , and I am passionate about coding. I enjoy creating innovative
+        solutions that help people and solve real-world problems. I am always
+        open to learning new things and not afraid to face challenges—if I don’t
+        know something, I will figure it out. If I do know, I am happy to help
+        others. I strive to grow as a developer, constantly improving my skills
+        and keeping up with modern technologies. I love working in a team,
+        sharing experiences, and achieving common goals together.
       </p>
     </AnimationContainer>
   );

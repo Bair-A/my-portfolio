@@ -8,6 +8,9 @@ export const siteConfig: {
   form_id: string;
   github_org_name: string;
   country: string;
+  previous_vork: {
+    foodster: string;
+  };
   social: {
     kofi: string;
     sponsor: string;
@@ -45,8 +48,8 @@ export const siteConfig: {
     type: string;
   };
 } = {
-  baseUrl: 'https://muhammadfiaz.com',
-  domain: 'muhammadfiaz.com',
+  baseUrl: '',
+  domain: '',
   author: 'Bair Aveev',
   author_surname: 'Aveev',
   titlePrefix: 'Bair Aveev',
@@ -55,13 +58,16 @@ export const siteConfig: {
   profile_image:
     'https://avatars.githubusercontent.com/u/60327040?s=400&u=70da1ce184957b372fedfe57b4550a6651a0b906&v=4',
   form_id: 'https://formspree.io/f/myzynpbr',
+  previous_vork: {
+    foodster: 'https://foodster.pro/'
+  },
   social: {
     kofi: 'https://ko-fi.com/muhammadfiaz',
     sponsor: 'https://github.com/sponsors/muhammad-fiaz',
-    email: 'contact@muhammadfiaz.com',
+    email: 'aveevbo123@gmail.com',
     twitter: '@muhammadfiaz_',
     github: 'muhammad-fiaz',
-    linkedin: 'https://www.linkedin.com/in/muhammad-fiaz-/',
+    linkedin: '',
     blog: 'https://articles.muhammadfiaz.com',
     medium: 'https://muhammad-fiaz.medium.com',
     dev: 'https://dev.to/muhammadfiaz',
@@ -72,7 +78,7 @@ export const siteConfig: {
       username: 'muhammadfiaz',
       card: 'https://api.daily.dev/devcards/v2/JVyK3ICBzKPdM0rcDj1o4.png?type=wide&r=vde'
     },
-    holopin: 'muhammadfiaz'
+    holopin: 'bairaveev'
   },
   metadata: {
     description: `Hi! I'm Muhammad Fiaz, a Full Stack developer passionate about building apps, exploring AI and ML, and collaborating on exciting projects. Let's connect!`,

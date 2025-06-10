@@ -14,9 +14,12 @@ const CurrentTimeLineExp = () => {
                 href={entry.companyUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className=" underline"
+                className="underline"
               >
-                {entry.title}
+                {entry.title}{' '}
+                <span>
+                  {entry.startDate} - {entry.endDate}
+                </span>
               </Link>
             ) : (
               entry.title
