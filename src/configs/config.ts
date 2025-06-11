@@ -64,7 +64,7 @@ export const siteConfig: {
   social: {
     kofi: 'https://ko-fi.com/muhammadfiaz',
     sponsor: 'https://github.com/sponsors/muhammad-fiaz',
-    email: 'aveevbo123@gmail.com',
+    email: 'aveevb123@gmail.com',
     twitter: '@muhammadfiaz_',
     github: 'muhammad-fiaz',
     linkedin: '',

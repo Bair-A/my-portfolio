@@ -30,9 +30,12 @@ const CurrentTimeLineExp = () => {
               </span>
             )}
           </TimelineEvent.Title>
-          <TimelineEvent.Description>
-            {entry.description}
-          </TimelineEvent.Description>
+
+          {entry.description.map((desc) => (
+            <TimelineEvent.Description key={desc.id}>
+              {desc.text}
+            </TimelineEvent.Description>
+          ))}
         </TimelineEvent>
       ))}
     </Timeline>
