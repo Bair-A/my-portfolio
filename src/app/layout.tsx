@@ -9,7 +9,6 @@ import Head from './head';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import { Analytics } from '@vercel/analytics/react';
 import { HeroUIProvider } from '@heroui/react';
-import { SessionProvider } from 'next-auth/react';
 import { ThemeProvider } from '../components/utils/themeContext';
 import ProgressBar from '@/src/components/ui/progress';
 import BackToTopButton from '@/src/components/ui/BackToTopButton';
@@ -46,22 +45,20 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
       <body className="transition ease-in-out min-h-screen">
         <HeroUIProvider>
           <ThemeProvider>
-            <SessionProvider>
-              {/* Show progress bar during loading */}
-              <ProgressBar />
+            {/* Show progress bar during loading */}
+            <ProgressBar />
 
-              {/* Main layout structure */}
-              <Header />
+            {/* Main layout structure */}
+            <Header />
 
-              <main className="flex flex-col justify-center items-center mx-auto">
-                {children}
-                <SpeedInsights />
-                <Analytics />
-              </main>
+            <main className="flex flex-col justify-center items-center mx-auto">
+              {children}
+              <SpeedInsights />
+              <Analytics />
+            </main>
 
-              <BackToTopButton />
-              <Footer />
-            </SessionProvider>
+            <BackToTopButton />
+            <Footer />
           </ThemeProvider>
         </HeroUIProvider>
       </body>

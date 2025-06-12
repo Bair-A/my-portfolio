@@ -66,7 +66,7 @@ export const siteConfig: {
     sponsor: 'https://github.com/sponsors/muhammad-fiaz',
     email: 'aveevb123@gmail.com',
     twitter: '@muhammadfiaz_',
-    github: 'muhammad-fiaz',
+    github: 'bair-a',
     linkedin: '',
     blog: 'https://articles.muhammadfiaz.com',
     medium: 'https://muhammad-fiaz.medium.com',
