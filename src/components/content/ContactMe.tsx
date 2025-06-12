@@ -89,7 +89,7 @@ const ContactMe = () => {
       <SectionHeader
         id="contactme"
         title="Contact Me"
-        content="Fill out the form below to contact me. Please, no spam. I strive to respond to all legitimate inquiries, but please be clear and concise in your message. Whether you have a question about my work, a project collaboration, or just want to connect, feel free to reach out. I look forward to hearing from you!"
+        content="Fill out the form below to contact me. Please, no spam. I look forward to hearing from you!"
       />
 
       <div className="w-full flex justify-between items-center flex-col mx-auto max-w-screen-xl">
