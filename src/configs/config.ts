@@ -12,6 +12,7 @@ export const siteConfig: {
     foodster: string;
   };
   social: {
+    telegram: string;
     kofi: string;
     sponsor: string;
     email: string;
@@ -48,7 +49,7 @@ export const siteConfig: {
     type: string;
   };
 } = {
-  baseUrl: '',
+  baseUrl: 'https://github.com/bair-a',
   domain: '',
   author: 'Bair Aveev',
   author_surname: 'Aveev',
@@ -62,11 +63,12 @@ export const siteConfig: {
     foodster: 'https://foodster.pro/'
   },
   social: {
+    telegram: 'https://t.me/aveev_bo',
     kofi: 'https://ko-fi.com/muhammadfiaz',
     sponsor: 'https://github.com/sponsors/muhammad-fiaz',
     email: 'aveevb123@gmail.com',
     twitter: '@muhammadfiaz_',
-    github: 'bair-a',
+    github: 'https://github.com/bair-a',
     linkedin: '',
     blog: 'https://articles.muhammadfiaz.com',
     medium: 'https://muhammad-fiaz.medium.com',

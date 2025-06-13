@@ -12,6 +12,7 @@ const Credits = () => {
         <Link
           href={siteConfig.baseUrl}
           className="text-blue-500 hover:underline"
+          target="_blank"
         >
           {siteConfig.author}
         </Link>
