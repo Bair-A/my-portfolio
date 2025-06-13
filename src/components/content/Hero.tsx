@@ -15,7 +15,7 @@ const Hero = () => {
             Hello!{' '}
           </span>
           <span className="font-mono text-pink-500 dark:text-pink-300">
-            I am
+            I'm
           </span>
         </p>
         <h1 className="font-bold text-3xl lg:text-5xl text-center lg:text-start tracking-tight mb-3 mx-auto lg:mx-0 text-gray-900 dark:text-white">

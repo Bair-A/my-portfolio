@@ -100,3 +100,24 @@ export const siteConfig: {
       'https://raw.githubusercontent.com/muhammad-fiaz/muhammad-fiaz/output/github-contribution-grid-snake.svg'
   }
 };
+
+interface ProjectsConfig {
+  category: string;
+  des: string;
+  id: string;
+  link: string;
+  repo?: string;
+  title: string;
+  topics: string[];
+}
+
+export const projectsConfig: ProjectsConfig[] = [
+  {
+    category: 'js',
+    des: 'Real project. Food ordering service.',
+    id: '1',
+    link: 'https://foodster.pro/',
+    title: 'foodster',
+    topics: ['js', 'react', 'next.js', 'ts', 'tailwind']
+  }
+];

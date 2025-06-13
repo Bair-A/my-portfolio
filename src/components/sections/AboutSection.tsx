@@ -5,7 +5,6 @@ import CurrentTimeLineExp from '../content/CurrentTimeLineExp';
 import TitleSectionPageContainer from '../utils/TitleSectionPageContainer';
 import SectionContainer from '../utils/SectionContainer';
 import Link from 'next/link';
-import ContactMe from '@/src/components/content/ContactMe';
 import SkillsSection from '@/src/components/sections/SkillsSection';
 
 const AboutSection = () => {
@@ -41,10 +40,6 @@ const AboutSection = () => {
 
         <AnimationContainer customClassName="w-full">
           <SkillsSection />
-        </AnimationContainer>
-        {/* Contact Section */}
-        <AnimationContainer customClassName="w-full mt-16">
-          <ContactMe />
         </AnimationContainer>
       </div>
     </SectionContainer>

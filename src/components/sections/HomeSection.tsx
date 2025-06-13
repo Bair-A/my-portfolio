@@ -1,7 +1,6 @@
 'use client';
 
 import AboutMe from '../content/AboutMe';
-import ContactMe from '../content/ContactMe';
 import CurrentTimeLineExp from '../content/CurrentTimeLineExp';
 import Hero from '../content/Hero';
 import AnimationContainer from '../utils/AnimationContainer';
@@ -38,11 +37,6 @@ const HomeSection = () => {
       {/* Skills Section */}
       <AnimationContainer customClassName="w-full mt-16">
         <SkillsSection />
-      </AnimationContainer>
-
-      {/* Contact Section */}
-      <AnimationContainer customClassName="w-full mt-16">
-        <ContactMe />
       </AnimationContainer>
     </SectionContainer>
   );

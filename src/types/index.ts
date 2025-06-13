@@ -36,7 +36,7 @@ export interface CardProjectProps {
   des: string;
   // category: string[];
   category: string; // FIX THIS
-  repo: string;
+  repo?: string;
   link: string;
   topics: string[];
   date?: string;
