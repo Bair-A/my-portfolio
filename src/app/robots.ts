@@ -14,8 +14,8 @@ export default function robots(): MetadataRoute.Robots {
       }
     ],
     sitemap: [
-      'https://muhammadfiaz.com/sitemap.xml', // First sitemap URL
-      'https://muhammadfiaz.com/sitemap-0.xml' // Second sitemap URL
+      '', // First sitemap URL
+      '' // Second sitemap URL
     ]
   };
 }

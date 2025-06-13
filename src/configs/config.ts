@@ -58,34 +58,33 @@ export const siteConfig: {
   country: 'Russia',
   profile_image:
     'https://avatars.githubusercontent.com/u/60327040?s=400&u=70da1ce184957b372fedfe57b4550a6651a0b906&v=4',
-  form_id: 'https://formspree.io/f/myzynpbr',
+  form_id: '',
   previous_vork: {
     foodster: 'https://foodster.pro/'
   },
   social: {
     telegram: 'https://t.me/aveev_bo',
-    kofi: 'https://ko-fi.com/muhammadfiaz',
-    sponsor: 'https://github.com/sponsors/muhammad-fiaz',
+    kofi: '',
+    sponsor: '',
     email: 'aveevb123@gmail.com',
-    twitter: '@muhammadfiaz_',
+    twitter: '',
     github: 'https://github.com/bair-a',
     linkedin: '',
-    blog: 'https://articles.muhammadfiaz.com',
-    medium: 'https://muhammad-fiaz.medium.com',
-    dev: 'https://dev.to/muhammadfiaz',
-    hashnode: 'https://muhammadfiaz.hashnode.dev',
-    discord: 'https://discord.gg/mXMhy2EX',
-    github_organisation: 'https://github.com/FiazTechnologies',
+    blog: '',
+    medium: '',
+    dev: '',
+    hashnode: '',
+    discord: '',
+    github_organisation: '',
     daily_dev: {
-      username: 'muhammadfiaz',
-      card: 'https://api.daily.dev/devcards/v2/JVyK3ICBzKPdM0rcDj1o4.png?type=wide&r=vde'
+      username: 'bairaveev',
+      card: ''
     },
     holopin: 'bairaveev'
   },
   metadata: {
-    description: `Hi! I'm Muhammad Fiaz, a Full Stack developer passionate about building apps, exploring AI and ML, and collaborating on exciting projects. Let's connect!`,
-    keywords:
-      'Muhammad Fiaz, Full Stack Developer, Muhammad Fiaz portfolio, Muhammad Fiaz GitHub, Web Development, Mobile Applications, Machine Learning, Artificial Intelligence, Programming Languages, Open Source Developer, App Development',
+    description: `Hi! I'm Bair Aveev, a Frontend developer passionate about building apps. Let's connect!`,
+    keywords: '',
     type: 'website'
   },
   chatbot: {
@@ -96,10 +95,9 @@ export const siteConfig: {
     rateLimit: 10
   },
   other: {
-    hacktoberfest: 'https://hacktoberfest.com/',
-    codsoft: 'https://www.codsoft.in/',
-    github_snake:
-      'https://raw.githubusercontent.com/muhammad-fiaz/muhammad-fiaz/output/github-contribution-grid-snake.svg'
+    hacktoberfest: '',
+    codsoft: '',
+    github_snake: ''
   }
 };
 
