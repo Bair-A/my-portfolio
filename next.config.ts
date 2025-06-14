@@ -4,6 +4,8 @@ import { NextConfig } from 'next';
 // validateEnvVars();
 
 const nextConfig: NextConfig = {
+  basePath: '/my-portfolio',
+  output: 'export',
   reactStrictMode: true,
   images: {
     remotePatterns: [
