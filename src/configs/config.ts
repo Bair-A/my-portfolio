@@ -114,7 +114,7 @@ interface ProjectsConfig {
 export const projectsConfig: ProjectsConfig[] = [
   {
     category: 'js',
-    des: 'Real project. Food ordering service.',
+    des: 'Food ordering service.',
     id: '1',
     link: 'https://foodster.pro/',
     title: 'foodster',
