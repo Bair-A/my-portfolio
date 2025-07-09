@@ -47,7 +47,7 @@ export const experienceEntries: ExperienceEntry[] = [
         text: 'Technologies: During development, used React and Next.js to create high-performance and responsive interfaces, as well as libraries like Ant Design, Tailwind CSS, and SCSS modules to ensure stylish and user-friendly design.'
       }
     ],
-    startDate: 'May 2023',
+    startDate: 'May 2022',
     endDate: 'April 2025',
     isActive: false,
     companyUrl: siteConfig.previous_vork.foodster
