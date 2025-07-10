@@ -118,6 +118,15 @@ export const projectsConfig: ProjectsConfig[] = [
     id: '1',
     link: 'https://foodster.pro/',
     title: 'foodster',
-    topics: ['js', 'react', 'next.js', 'ts', 'tailwind']
+    topics: [
+      'JS',
+      'TS',
+      'React',
+      'Next.js',
+      'Refine dev',
+      'Tailwind',
+      'Ant Design',
+      'FSD'
+    ]
   }
 ];
