@@ -13,6 +13,7 @@ import { ThemeProvider } from '../components/utils/themeContext';
 import ProgressBar from '@/src/components/ui/progress';
 import BackToTopButton from '@/src/components/ui/BackToTopButton';
 import React from 'react';
+import '@/src/utils/i18n';
 
 const graphik = local({
   src: [

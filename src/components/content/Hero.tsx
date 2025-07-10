@@ -4,14 +4,16 @@ import Image from 'next/image';
 import { siteConfig } from '@/src/configs/config';
 import AnimationContainer from '../utils/AnimationContainer';
 import Link from 'next/link';
+import { useTranslation } from 'react-i18next';
 
 const Hero = () => {
+  const { t } = useTranslation();
   return (
     <div className="w-full flex justify-between flex-col-reverse lg:flex-row items-center">
       <AnimationContainer customClassName="flex flex-col items-center justify-between lg:items-start p-0 lg:pr-8">
         <p className="text-lg text-gray-800 dark:text-gray-200 mb-2">
           <span className="font-mono text-teal-500 dark:text-teal-300">
-            Hello!{' '}
+            {t('hello')}{' '}
           </span>
           <span className="font-mono text-pink-500 dark:text-pink-300">
             I'm
