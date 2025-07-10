@@ -1,13 +1,11 @@
 import { NextConfig } from 'next';
 
-// Validate and assign default values to environment variables
-// validateEnvVars();
-
 const nextConfig: NextConfig = {
   basePath: '/my-portfolio',
   output: 'export',
   reactStrictMode: true,
   images: {
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: 'https',
