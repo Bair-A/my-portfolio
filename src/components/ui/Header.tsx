@@ -6,6 +6,7 @@ import MobileMenuNav from './MobileMenuNav';
 import NavItem from './NavItem';
 import { siteConfig } from '@/src/configs/config';
 import ThemeToggle from '@/src/components/utils/ThemeToggle';
+import LanguageSwitcher from '@/src/components/utils/LanguageSwitcher';
 
 const Header = () => {
   return (
@@ -29,6 +30,7 @@ const Header = () => {
           <MobileMenuNav />
           <NavItem />
           <ThemeToggle />
+          <LanguageSwitcher />
         </div>
       </nav>
     </HeaderAnimation>
