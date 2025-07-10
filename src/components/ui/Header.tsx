@@ -25,7 +25,6 @@ const Header = () => {
           </h1>
         </div>
 
-        {/* Navigation Section */}
         <div className="ml-[-0.80rem] flex items-center gap-4">
           <MobileMenuNav />
           <NavItem />
