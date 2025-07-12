@@ -4,8 +4,9 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import clsx from 'clsx';
 import { NavItemHeaderAnimation } from '@/src/types';
+import { useTranslation } from 'react-i18next';
 
-export const navItemsSelected: { [key: string]: NavItemHeaderAnimation } = {
+export const navItemsEn: { [key: string]: NavItemHeaderAnimation } = {
   '/': {
     name: 'home'
   },
@@ -17,12 +18,26 @@ export const navItemsSelected: { [key: string]: NavItemHeaderAnimation } = {
   }
 };
 
+export const navItemsRu: { [key: string]: NavItemHeaderAnimation } = {
+  '/': {
+    name: 'на главную'
+  },
+  '/about': {
+    name: 'обо мне'
+  },
+  '/projects': {
+    name: 'проекты'
+  }
+};
+
 const LinksNav = () => {
+  const { i18n } = useTranslation();
   let pathname = usePathname() as string;
+  const navItems = i18n.language === 'ru' ? navItemsRu : navItemsEn;
 
   return (
     <>
-      {Object.entries(navItemsSelected).map(([path, { name }]) => {
+      {Object.entries(navItems).map(([path, { name }]) => {
         const isActive = path === pathname;
 
         return (
