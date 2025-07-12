@@ -4,8 +4,10 @@ import ExternalLink from '../ui/ExternalLink';
 import AnimationContainer from '../utils/AnimationContainer';
 import { CardProjectProps } from '@/src/types';
 import { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 const CardProject = ({ title, des, repo, link, topics }: CardProjectProps) => {
+  const { i18n } = useTranslation();
   const [showAllTopics, setShowAllTopics] = useState(false);
   const [showFullDescription, setShowFullDescription] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -91,7 +93,11 @@ const CardProject = ({ title, des, repo, link, topics }: CardProjectProps) => {
                 customClassName="text-white inline-flex items-center rounded-lg bg-black p-2 hover:bg-gray-900 transition-all ease-in-out duration-300 transform hover:scale-110"
               >
                 <div className={'flex gap-2 underline'}>
-                  <span className="hidden sm:inline">View GitHub Repo</span>
+                  <span className="hidden sm:inline">
+                    {i18n.language === 'en'
+                      ? 'View GitHub Repo'
+                      : 'Посмотреть репозиторий на GitHub'}
+                  </span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     color="currentColor"
@@ -112,7 +118,12 @@ const CardProject = ({ title, des, repo, link, topics }: CardProjectProps) => {
               customClassName="text-white inline-flex items-center rounded-lg bg-black p-2 hover:bg-gray-900 transition-all ease-in-out duration-300 transform hover:scale-110"
             >
               <div className={'flex gap-2 underline'}>
-                <span className="hidden sm:inline">Open Live Project</span>
+                <span className="hidden sm:inline">
+                  {' '}
+                  {i18n.language === 'en'
+                    ? 'Open Live Project'
+                    : 'Открыть проект'}
+                </span>
 
                 <svg
                   fill="currentColor"

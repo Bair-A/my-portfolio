@@ -2,6 +2,7 @@ export const siteConfig: {
   baseUrl: string;
   domain: string;
   author: string;
+  translated_author: string;
   author_surname: string;
   titlePrefix: string;
   profile_image: string;
@@ -52,6 +53,7 @@ export const siteConfig: {
   baseUrl: 'https://github.com/bair-a',
   domain: '',
   author: 'Bair Aveev',
+  translated_author: 'Авеев Байр',
   author_surname: 'Aveev',
   titlePrefix: 'Bair Aveev',
   github_org_name: '',
@@ -104,6 +106,7 @@ export const siteConfig: {
 interface ProjectsConfig {
   category: string;
   des: string;
+  des_ru: string;
   id: string;
   link: string;
   repo?: string;
@@ -115,6 +118,7 @@ export const projectsConfig: ProjectsConfig[] = [
   {
     category: 'js',
     des: 'Food ordering service.',
+    des_ru: 'Сервис по заказу еды.',
     id: '1',
     link: 'https://foodster.pro/',
     title: 'foodster',

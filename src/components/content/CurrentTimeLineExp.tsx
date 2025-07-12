@@ -1,12 +1,20 @@
 'use client';
 import { Timeline, TimelineEvent } from './TimeLineExp';
-import { experienceEntries } from '@/src/configs/experience';
+import { useTranslation } from 'react-i18next';
+import {
+  experienceEntries,
+  experienceEntriesRu
+} from '@/src/configs/experience';
 import Link from 'next/link';
 
 const CurrentTimeLineExp = () => {
+  const { i18n } = useTranslation();
+  const entries =
+    i18n.language === 'ru' ? experienceEntriesRu : experienceEntries;
+
   return (
     <Timeline>
-      {experienceEntries.map((entry, index) => (
+      {entries.map((entry, index) => (
         <TimelineEvent key={index} active={entry.isActive}>
           <TimelineEvent.Title>
             {entry.companyUrl ? (

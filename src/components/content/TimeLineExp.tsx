@@ -3,16 +3,18 @@ import classNames from 'classnames';
 import AnimationContainer from '../utils/AnimationContainer';
 import { TimelineEventProps } from '@/src/types';
 import SectionHeader from '@/src/components/ui/SectionHeader';
+import { useTranslation } from 'react-i18next';
 
 // Main Timeline container component
 export const Timeline = ({ children }: { children: React.ReactNode }) => {
+  const { t } = useTranslation();
+
   return (
     <AnimationContainer customClassName="w-full mb-16">
       <SectionHeader
-        title="Experience"
-        content="I’ve had the opportunity to gain valuable experience as a software developer. Below is a summary of my work and the skills I've developed along the way."
+        title={t('experience.title')}
+        content={t('experience.content')}
       />
-
       {children}
     </AnimationContainer>
   );

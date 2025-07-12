@@ -4,12 +4,14 @@ import Image from 'next/image';
 import AnimationContainer from '@/src/components/utils/AnimationContainer';
 import SectionHeader from '@/src/components/ui/SectionHeader';
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 const MySkills = () => {
+  const { t } = useTranslation();
   return (
     <AnimationContainer customClassName="w-full mt-16">
       <div className="flex flex-col gap-5">
-        <SectionHeader title="Skills" content="" />
+        <SectionHeader title={t('skills.title')} content="" />
 
         <div className="w-full flex flex-col gap-8">
           <div className="w-full flex justify-center items-center">

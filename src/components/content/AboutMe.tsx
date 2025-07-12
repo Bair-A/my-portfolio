@@ -3,28 +3,41 @@
 import AnimationContainer from '../utils/AnimationContainer';
 import { siteConfig } from '@/src/configs/config';
 import SectionHeader from '@/src/components/ui/SectionHeader';
+import { useTranslation, Trans } from 'react-i18next';
+import Link from 'next/link';
 
 const AboutMe = () => {
+  const { t, i18n } = useTranslation();
+
   return (
     <AnimationContainer customClassName="w-full mb-16">
       <SectionHeader
         id="aboutme"
-        title="About Me"
-        content={`Here is a little bit about me and my journey as a developer.`}
+        title={t('aboutMe.title')}
+        content={t('aboutMe.content')}
       />
-
       <p className="text-sm sm:text-base md:text-lg text-foreground dark:text-white">
-        Hey there! 👋 I'm{' '}
-        <strong className="text-foreground dark:text-white">
-          {siteConfig.author}
-        </strong>
-        , and I am passionate about coding. I enjoy creating innovative
-        solutions that help people and solve real-world problems. I am always
-        open to learning new things and not afraid to face challenges—if I don’t
-        know something, I will figure it out. If I do know, I am happy to help
-        others. I strive to grow as a developer, constantly improving my skills
-        and keeping up with modern technologies. I love working in a team,
-        sharing experiences, and achieving common goals together.
+        <Trans
+          i18nKey="aboutMe.description"
+          values={{
+            author:
+              i18n.language === 'en'
+                ? siteConfig.author
+                : siteConfig.translated_author
+          }}
+          components={{
+            strong: <strong className="text-foreground dark:text-white" />
+          }}
+        />{' '}
+        <Link
+          href={`https://github.com/${siteConfig.social.github}`}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-white hover:underline transition-all ease"
+        >
+          GitHub
+        </Link>{' '}
+        ✌️.
       </p>
     </AnimationContainer>
   );

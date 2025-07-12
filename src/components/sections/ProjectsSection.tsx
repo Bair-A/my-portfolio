@@ -9,8 +9,10 @@ import CardProject from '@/src/components/content/CardProject';
 import Link from 'next/link';
 import { projectsConfig } from '@/src/configs/config';
 import Script from 'next/script';
+import { useTranslation } from 'react-i18next';
 
 const ProjectsSection = () => {
+  const { t, i18n } = useTranslation();
   // Generate JSON-LD structured data for each individual project
   const generateJsonLdForProject = (project: CardProjectProps) => {
     const jsonLd = {
@@ -35,20 +37,17 @@ const ProjectsSection = () => {
     <>
       <SectionContainer>
         <div className="w-full flex flex-col gap-6">
-          <TitleSectionPageContainer title="Projects" />
+          <TitleSectionPageContainer title={t('projects.title')} />
 
           <AnimationContainer customClassName="w-full flex flex-col gap-5 mb-8">
             <p className="w-full text-base text-black dark:text-white">
-              These are the projects I have worked on since I started
-              programming. Some of them are personal projects, while others were
-              created for work or different purposes. If you would like to see
-              all of my projects, feel free to visit my{' '}
+              {t('projects.content')}{' '}
               <Link
                 href={`https://github.com/${siteConfig.social.github}`}
                 target="_blank"
                 className="underline transition-all ease"
               >
-                github page
+                github
               </Link>
               .
             </p>
@@ -57,7 +56,7 @@ const ProjectsSection = () => {
           {/* Display Projects or error message */}
           <article className="w-full flex justify-center items-center content-center flex-wrap gap-6 mx-auto">
             {projectsConfig.map(
-              ({ id, title, des, category, repo, link, topics }) => (
+              ({ id, title, des, des_ru, category, repo, link, topics }) => (
                 <React.Fragment key={id}>
                   {/* Add JSON-LD for each individual project */}
                   <Script
@@ -79,7 +78,7 @@ const ProjectsSection = () => {
                   <CardProject
                     key={id}
                     title={title}
-                    des={des}
+                    des={i18n.language === 'en' ? des : des_ru}
                     category={category}
                     repo={repo}
                     link={link}

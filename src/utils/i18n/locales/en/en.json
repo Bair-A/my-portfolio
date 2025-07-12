@@ -1,3 +1,27 @@
 {
-  "hello": "Hello"
+  "home": {
+    "opportunities": "Available for new opportunities"
+  },
+  "hero": {
+    "hello": "Hello",
+    "Im": "I'm ",
+    "frontendDeveloper": "I'm a Frontend Developer",
+    "hire": "Hire me"
+  },
+  "aboutMe": {
+    "title": "About Me",
+    "content": "Here is a little bit about me and my journey as a developer.",
+    "description": "Hey there! 👋 I'm <strong>{{author}}</strong>, and I am passionate about coding. I enjoy creating innovative solutions that help people and solve real-world problems. I am always open to learning new things and not afraid to face challenges—if I don’t know something, I will figure it out. If I do know, I am happy to help others. I strive to grow as a developer, constantly improving my skills and keeping up with modern technologies. I love working in a team, sharing experiences, and achieving common goals together."
+  },
+  "experience": {
+    "title": "Experience",
+    "content": "I’ve had the opportunity to gain valuable experience as a software developer. Below is a summary of my work and the skills I've developed along the way."
+  },
+  "skills": {
+    "title": "Skills"
+  },
+  "projects": {
+    "title": "Projects",
+    "content": "These are the projects I have worked on since I started programming. Some of them are personal projects, while others were created for work or different purposes. If you would like to see all of my projects, feel free to visit my"
+  }
 }
