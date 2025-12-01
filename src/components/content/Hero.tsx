@@ -49,7 +49,7 @@ const Hero = () => {
           width={250}
           height={250}
           priority
-          className="rounded-[12px] filter grayscale hover:grayscale-0 transition ease bg-background/30 dark:bg-background/30"
+          className="rounded-[12px] filter ease bg-background/30 dark:bg-background/30"
         />
       </AnimationContainer>
     </div>
