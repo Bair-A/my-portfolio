@@ -43,7 +43,7 @@ const ProjectsSection = () => {
             <p className="w-full text-base text-black dark:text-white">
               {t('projects.content')}{' '}
               <Link
-                href={`https://github.com/${siteConfig.social.github}`}
+                href={`${siteConfig.social.github}`}
                 target="_blank"
                 className="underline transition-all ease"
               >
