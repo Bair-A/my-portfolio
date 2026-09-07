@@ -47,8 +47,8 @@ export const experienceEntries: ExperienceEntry[] = [
         text: 'Technologies: During development, used React and Next.js to create high-performance and responsive interfaces, as well as libraries like Ant Design, Tailwind CSS, and SCSS modules to ensure stylish and user-friendly design.'
       }
     ],
-    startDate: 'May 2022',
-    endDate: 'April 2025',
+    startDate: 'September 2023',
+    endDate: 'March 2025',
     isActive: false,
     companyUrl: siteConfig.previous_vork.foodster
   }
@@ -91,8 +91,8 @@ export const experienceEntriesRu: ExperienceEntry[] = [
         text: 'Технологии: В процессе разработки использовал React и Next.js для создания высокопроизводительных и адаптивных интерфейсов, а также библиотеки Ant Design, Tailwind CSS и SCSS модули для обеспечения стильного и удобного дизайна.'
       }
     ],
-    startDate: 'Май 2022',
-    endDate: 'Апрель 2025',
+    startDate: 'Сентябрь 2023',
+    endDate: 'Март 2025',
     isActive: false,
     companyUrl: siteConfig.previous_vork.foodster
   }
