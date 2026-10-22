@@ -11,18 +11,15 @@ const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 // Поле `mock: true` помечает выдуманные данные — на сайте у них плашка «пример».
 export const DATA = {
   name: "Байр Авеев",
-  firstName: "Байр",
   initials: "БА",
   url: "https://bair-a.github.io/my-portfolio",
   location: "Россия",
-  description:
-    "Фронтенд-разработчик. React, Next.js, TypeScript. Делаю интерфейсы для продуктов с реальными пользователями.",
+  description: "Фронтенд-разработчик. Делаю интерфейсы на React и Next.js.",
   summary:
     "Полтора года разрабатывал админ-панель и PWA для сервиса доставки еды [Foodster](https://foodster.pro/). Через месяц после запуска PWA заказы через сервис выросли на **17%**. Люблю решать реальные задачи пользователей: если чего-то не знаю — разберусь, если знаю — с радостью помогу команде. Сейчас **открыт к новым предложениям**.",
   avatarUrl:
     "https://avatars.githubusercontent.com/u/60327040?s=400&u=70da1ce184957b372fedfe57b4550a6651a0b906&v=4",
   logoUrl: `${BASE_PATH}/logo.png`,
-  openToWork: true,
 
   stats: [
     { value: "1,5 года", label: "коммерческой разработки" },

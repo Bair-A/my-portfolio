@@ -19,24 +19,13 @@ export default function Page() {
     <main className="min-h-dvh flex flex-col gap-14 relative">
       <section id="hero">
         <div className="mx-auto w-full max-w-2xl space-y-8">
-          <div className="gap-2 gap-y-6 flex flex-col md:flex-row justify-between">
+          <div className="gap-2 gap-y-6 flex flex-col md:flex-row md:items-center justify-between">
             <div className="gap-2 flex flex-col order-2 md:order-1">
-              {DATA.openToWork && (
-                <BlurFade delay={BLUR_FADE_DELAY}>
-                  <span className="inline-flex w-fit items-center gap-2 rounded-full border px-3 py-1 text-xs font-medium text-muted-foreground">
-                    <span className="relative flex size-2">
-                      <span className="absolute inline-flex size-full animate-ping rounded-full bg-emerald-500 opacity-75" />
-                      <span className="relative inline-flex size-2 rounded-full bg-emerald-500" />
-                    </span>
-                    Открыт к предложениям
-                  </span>
-                </BlurFade>
-              )}
               <BlurFadeText
                 delay={BLUR_FADE_DELAY}
-                className="text-3xl font-semibold tracking-tighter sm:text-4xl lg:text-5xl"
+                className="text-3xl font-semibold tracking-tight sm:text-4xl lg:text-5xl"
                 yOffset={8}
-                text={`Привет, я ${DATA.firstName} 👋`}
+                text={DATA.name}
               />
               <BlurFadeText
                 className="text-muted-foreground max-w-[600px] md:text-lg lg:text-xl"
