@@ -1,7 +1,8 @@
 import type { NextConfig } from "next";
 
-// Сайт публикуется на GitHub Pages по адресу bair-a.github.io/my-portfolio
-const basePath = "/my-portfolio";
+// На GitHub Pages сайт живёт по адресу bair-a.github.io/my-portfolio,
+// на Vercel (там задана переменная VERCEL) — в корне домена
+const basePath = process.env.VERCEL ? "" : "/my-portfolio";
 
 const nextConfig: NextConfig = {
   basePath,
