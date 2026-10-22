@@ -1,70 +1,91 @@
-'use client';
+import Navbar from "@/components/navbar";
+import { ThemeProvider } from "@/components/theme-provider";
+import { TooltipProvider } from "@/components/ui/tooltip";
+import { DATA } from "@/data/resume";
+import { cn } from "@/lib/utils";
+import type { Metadata } from "next";
+import { Geist, Geist_Mono } from "next/font/google";
+import "./globals.css";
+import { FlickeringGrid } from "@/components/magicui/flickering-grid";
 
-import '@/src/styles/globals.css';
-import clsx from 'clsx';
-import local from 'next/font/local';
-import Header from '@/src/components/ui/Header';
-import Footer from '@/src/components/ui/Footer';
-import Head from './head';
-import { SpeedInsights } from '@vercel/speed-insights/next';
-import { Analytics } from '@vercel/analytics/react';
-import { HeroUIProvider } from '@heroui/react';
-import { ThemeProvider } from '../components/utils/themeContext';
-import ProgressBar from '@/src/components/ui/progress';
-import BackToTopButton from '@/src/components/ui/BackToTopButton';
-import React from 'react';
-import '@/src/utils/i18n';
-
-const graphik = local({
-  src: [
-    {
-      path: '../../public/fonts/Graphik-Regular.ttf',
-      weight: '400',
-      style: 'normal'
-    },
-    {
-      path: '../../public/fonts/Graphik-Medium.ttf',
-      weight: '600',
-      style: 'bold'
-    }
-  ],
-  variable: '--font-graphik',
-  display: 'swap' // Ensures text is visible while the font loads
+const geist = Geist({
+  subsets: ["latin", "cyrillic"],
+  variable: "--font-sans",
+  weight: ["400", "500", "600", "700"],
 });
 
-const RootLayout = ({ children }: { children: React.ReactNode }) => {
+const geistMono = Geist_Mono({
+  subsets: ["latin", "cyrillic"],
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-mono",
+});
+
+export const metadata: Metadata = {
+  metadataBase: new URL(DATA.url),
+  title: {
+    default: DATA.name,
+    template: `%s | ${DATA.name}`,
+  },
+  description: DATA.description,
+  openGraph: {
+    title: `${DATA.name}`,
+    description: DATA.description,
+    url: DATA.url,
+    siteName: `${DATA.name}`,
+    locale: "ru_RU",
+    type: "website",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  twitter: {
+    title: `${DATA.name}`,
+    card: "summary_large_image",
+  },
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
-    <html
-      lang="en"
-      className={clsx(
-        'text-foreground bg-background dark:text-foreground dark:bg-background transition ease-in-out',
-        graphik.variable
-      )}
-    >
-      <Head />
-
-      <body className="transition ease-in-out min-h-screen">
-        <HeroUIProvider>
-          <ThemeProvider>
-            {/* Show progress bar during loading */}
-            <ProgressBar />
-
-            {/* Main layout structure */}
-            <Header />
-
-            <main className="flex flex-col justify-center items-center mx-auto">
+    <html lang="ru" suppressHydrationWarning>
+      <body
+        className={cn(
+          "min-h-screen bg-background font-sans antialiased relative",
+          geist.variable,
+          geistMono.variable
+        )}
+      >
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <TooltipProvider delayDuration={0}>
+            <div className="absolute inset-0 top-0 left-0 right-0 h-[100px] overflow-hidden z-0">
+              <FlickeringGrid
+                className="h-full w-full"
+                squareSize={2}
+                gridGap={2}
+                style={{
+                  maskImage: "linear-gradient(to bottom, black, transparent)",
+                  WebkitMaskImage: "linear-gradient(to bottom, black, transparent)",
+                }}
+              />
+            </div>
+            <div className="relative z-10 max-w-2xl mx-auto py-12 pb-24 sm:py-24 px-6">
               {children}
-              <SpeedInsights />
-              <Analytics />
-            </main>
-
-            <BackToTopButton />
-            <Footer />
-          </ThemeProvider>
-        </HeroUIProvider>
+            </div>
+            <Navbar />
+          </TooltipProvider>
+        </ThemeProvider>
       </body>
     </html>
   );
-};
-
-export default RootLayout;
+}

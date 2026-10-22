@@ -1,87 +1,17 @@
-import { NextConfig } from 'next';
+import type { NextConfig } from "next";
+
+// Сайт публикуется на GitHub Pages по адресу bair-a.github.io/my-portfolio
+const basePath = "/my-portfolio";
 
 const nextConfig: NextConfig = {
-  basePath: '/my-portfolio',
-  output: 'export',
+  basePath,
+  output: "export",
+  trailingSlash: true,
   reactStrictMode: true,
-  images: {
-    unoptimized: true,
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'avatars.githubusercontent.com',
-        port: '',
-        pathname: '/**'
-      },
-      {
-        protocol: 'https',
-        hostname: 'skillicons.dev',
-        port: '',
-        pathname: '/icons'
-      },
-      {
-        protocol: 'https',
-        hostname: 'github-profile-trophy.vercel.app',
-        port: '',
-        pathname: '/**'
-      },
-      {
-        protocol: 'https',
-        hostname: 'github-readme-streak-stats-seven-azure.vercel.app',
-        port: '',
-        pathname: '/**'
-      },
-      {
-        protocol: 'https',
-        hostname: 'github-readme-stats.vercel.app',
-        port: '',
-        pathname: '/**'
-      },
-      {
-        protocol: 'https',
-        hostname: 'github-contributor-stats.vercel.app',
-        port: '',
-        pathname: '/**'
-      },
-      {
-        protocol: 'https',
-        hostname: 'github-readme-activity-graph.vercel.app',
-        port: '',
-        pathname: '/**'
-      },
-      {
-        protocol: 'https',
-        hostname: 'api.daily.dev',
-        port: '',
-        pathname: '/devcards/v2/**'
-      },
-      {
-        protocol: 'https',
-        hostname: 'holopin.me',
-        port: '',
-        pathname: '/**'
-      },
-      {
-        protocol: 'https',
-        hostname: 'raw.githubusercontent.com',
-        port: '',
-        pathname: '/**'
-      },
-      {
-        protocol: 'https',
-        hostname: 'github-readme-stats.vercel.app',
-        port: '',
-        pathname: '/api/wakatime'
-      },
-      {
-        protocol: 'https',
-        hostname: 'wakatime.com',
-        port: '',
-        pathname: '/**'
-      }
-    ],
-    dangerouslyAllowSVG: true // Allow SVG images
-  }
+  images: { unoptimized: true },
+  env: {
+    NEXT_PUBLIC_BASE_PATH: basePath,
+  },
 };
 
 export default nextConfig;
