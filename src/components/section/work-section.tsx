@@ -81,11 +81,15 @@ export default function WorkSection() {
             </div>
           </AccordionTrigger>
           <AccordionContent className="p-0 ml-13 text-xs sm:text-sm text-muted-foreground">
+            {work.intro && <p className="mb-2">{work.intro}</p>}
             <ul className="list-disc space-y-1 pl-4">
               {work.description.map((item) => (
                 <li key={item}>{item}</li>
               ))}
             </ul>
+            {work.result && (
+              <p className="mt-2 font-medium text-foreground">{work.result}</p>
+            )}
           </AccordionContent>
         </AccordionItem>
       ))}
