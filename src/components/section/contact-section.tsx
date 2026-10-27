@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { FlickeringGrid } from "@/components/magicui/flickering-grid";
+import { EmailLink } from "@/components/email-link";
 import { DATA } from "@/data/resume";
 
 export default function ContactSection() {
@@ -34,12 +35,10 @@ export default function ContactSection() {
             в Telegram
           </Link>
           . Можно и на почту:{" "}
-          <Link
-            href={`mailto:${DATA.contact.email}`}
+          <EmailLink
+            email={DATA.contact.email}
             className="text-blue-500 hover:underline underline-offset-4 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 rounded-sm"
-          >
-            {DATA.contact.email}
-          </Link>
+          />
           .
         </p>
       </div>
