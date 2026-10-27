@@ -21,7 +21,7 @@ export default function ContactSection() {
       </div>
       <div className="relative flex flex-col items-center gap-4 text-center">
         <h2 className="text-3xl font-bold tracking-tight sm:text-5xl">
-          Давайте поговорим
+          Связаться со мной
         </h2>
         <p className="mx-auto max-w-lg text-muted-foreground text-balance">
           Быстрее всего отвечу{" "}
