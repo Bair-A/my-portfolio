@@ -16,13 +16,13 @@ export const DATA = {
   location: "Россия",
   description: "Фронтенд-разработчик. Делаю интерфейсы на React и Next.js.",
   summary:
-    "Полтора года разрабатывал админ-панель и PWA для сервиса доставки еды [Foodster](https://foodster.pro/). Через месяц после запуска PWA заказы через сервис выросли на **17%**. Люблю решать реальные задачи пользователей: если чего-то не знаю — разберусь, если знаю — с радостью помогу команде. Сейчас **открыт к новым предложениям**.",
+    "Полтора года работал фронтенд-разработчиком в сервисе доставки еды [Foodster](https://foodster.pro/): делал админ-панель и PWA. Через месяц после запуска PWA заказы через сервис выросли на **17%**. Люблю решать реальные задачи пользователей: если чего-то не знаю — разберусь, если знаю — с радостью помогу команде. Сейчас **открыт к новым предложениям**.",
   avatarUrl:
     "https://avatars.githubusercontent.com/u/60327040?s=400&u=70da1ce184957b372fedfe57b4550a6651a0b906&v=4",
   logoUrl: `${BASE_PATH}/logo.png`,
 
   stats: [
-    { value: "1,5 года", label: "коммерческой разработки" },
+    { value: "1,5 года", label: "коммерческого опыта" },
     { value: "+17%", label: "заказов после запуска PWA" },
     { value: "2 продукта", label: "админ-панель и PWA" },
   ],
@@ -102,18 +102,6 @@ export const DATA = {
     },
   ],
 
-  education: [
-    {
-      school: "Название университета",
-      href: "#",
-      degree: "Бакалавр, информатика",
-      logoUrl: "",
-      start: "2018",
-      end: "2022",
-      mock: true,
-    },
-  ],
-
   projects: [
     {
       title: "Foodster — админ-панель",
@@ -142,27 +130,14 @@ export const DATA = {
       video: "",
     },
     {
-      title: "Weather Board",
+      // Заготовка: впиши описание, стек, даты и ссылки, затем убери mock: true
+      title: "Book-swap",
       href: "#",
-      dates: "2024",
+      dates: "2025",
       active: false,
       mock: true,
-      description:
-        "Дашборд погоды с поиском городов, графиками на неделю и сохранением избранного в localStorage.",
-      technologies: ["React", "TypeScript", "Recharts", "Tailwind CSS"],
-      links: [{ type: "Код", href: "#", icon: <Icons.github className="size-3" /> }],
-      image: "",
-      video: "",
-    },
-    {
-      title: "Kanban",
-      href: "#",
-      dates: "2023",
-      active: false,
-      mock: true,
-      description:
-        "Канбан-доска с drag-and-drop, тёмной темой и синхронизацией между вкладками.",
-      technologies: ["Next.js", "dnd-kit", "Zustand", "shadcn/ui"],
+      description: "Сервис для обмена книгами между читателями.",
+      technologies: ["React", "Next.js", "TypeScript"],
       links: [{ type: "Код", href: "#", icon: <Icons.github className="size-3" /> }],
       image: "",
       video: "",
