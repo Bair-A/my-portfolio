@@ -21,8 +21,10 @@ export const DATA = {
     "https://avatars.githubusercontent.com/u/60327040?s=400&u=70da1ce184957b372fedfe57b4550a6651a0b906&v=4",
   logoUrl: `${BASE_PATH}/logo.png`,
 
+  // Цифры относятся только к работе в Foodster — это подписано над блоком
+  statsTitle: "Foodster · сен 2023 — мар 2025",
   stats: [
-    { value: "1,5 года", label: "коммерческого опыта" },
+    { value: "1,5 года", label: "фронтенд-разработчиком" },
     { value: "+17%", label: "заказов после запуска PWA" },
     { value: "2 продукта", label: "админ-панель и PWA" },
   ],

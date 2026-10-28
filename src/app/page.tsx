@@ -39,15 +39,20 @@ export default function Page() {
       </section>
       <section id="stats">
         <BlurFade delay={BLUR_FADE_DELAY * 2}>
-          <div className="grid grid-cols-3 divide-x rounded-xl border">
-            {DATA.stats.map((stat) => (
-              <div key={stat.label} className="flex flex-col gap-1 p-4">
-                <span className="text-lg font-semibold tracking-tight sm:text-2xl">
-                  {stat.value}
-                </span>
-                <span className="text-xs text-muted-foreground">{stat.label}</span>
-              </div>
-            ))}
+          <div className="rounded-xl border">
+            <div className="border-b px-4 py-2 text-xs font-medium text-muted-foreground">
+              {DATA.statsTitle}
+            </div>
+            <div className="grid grid-cols-3 divide-x">
+              {DATA.stats.map((stat) => (
+                <div key={stat.label} className="flex flex-col gap-1 p-4">
+                  <span className="text-lg font-semibold tracking-tight sm:text-2xl">
+                    {stat.value}
+                  </span>
+                  <span className="text-xs text-muted-foreground">{stat.label}</span>
+                </div>
+              ))}
+            </div>
           </div>
         </BlurFade>
       </section>
