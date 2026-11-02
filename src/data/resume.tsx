@@ -139,13 +139,16 @@ export const DATA = {
     {
       // Заготовка: впиши описание, стек, даты и ссылки, затем убери mock: true
       title: "Book-swap",
-      href: "#",
+      href: "https://bookswap-bice.vercel.app",
       dates: "2025",
       active: false,
       mock: true,
       description: "Сервис для обмена книгами между читателями.",
       technologies: ["React", "Next.js", "TypeScript"],
-      links: [{ type: "Код", href: "#", icon: <Icons.github className="size-3" /> }],
+      links: [
+        { type: "Сайт", href: "https://bookswap-bice.vercel.app", icon: <Icons.globe className="size-3" /> },
+        { type: "Код", href: "https://github.com/Bair-A/bookswap", icon: <Icons.github className="size-3" /> },
+      ],
       image: "",
       video: "",
     },
