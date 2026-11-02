@@ -91,22 +91,6 @@ export const DATA = {
       ],
       result: "Через месяц после запуска PWA заказы через сервис выросли на 17%.",
     },
-    {
-      company: "Фриланс",
-      href: "#",
-      location: "Удалённо",
-      title: "Фронтенд-разработчик",
-      logoUrl: "",
-      start: "2022",
-      end: "2023",
-      mock: true,
-      intro: "",
-      description: [
-        "Вёрстка лендингов и небольших SPA на React для малого бизнеса.",
-        "Настройка адаптивной вёрстки и деплоя на Vercel.",
-      ],
-      result: "",
-    },
   ],
 
   projects: [
@@ -137,14 +121,14 @@ export const DATA = {
       video: "",
     },
     {
-      // Заготовка: впиши описание, стек, даты и ссылки, затем убери mock: true
-      title: "Book-swap",
+      title: "КнигоМатч (Book-swap)",
       href: "https://bookswap-bice.vercel.app",
-      dates: "2025",
+      dates: "2026",
       active: false,
-      mock: true,
-      description: "Сервис для обмена книгами между читателями.",
-      technologies: ["React", "Next.js", "TypeScript"],
+      mock: false,
+      description:
+        "Обмен книгами в формате свайпов: «хочу» или «мимо», взаимный интерес даёт **матч и чат**. Поиск книг по своему каталогу, Фантлабу и Google Books, своя авторизация без почты и телефона.",
+      technologies: ["Next.js", "TypeScript", "Supabase", "Server Actions", "Tailwind CSS", "Motion"],
       links: [
         { type: "Сайт", href: "https://bookswap-bice.vercel.app", icon: <Icons.globe className="size-3" /> },
         { type: "Код", href: "https://github.com/Bair-A/bookswap", icon: <Icons.github className="size-3" /> },
